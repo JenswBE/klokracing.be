@@ -1,0 +1,16 @@
+# Blacklist all
+/**
+
+# Whitelist allowed
+!/README.md
+!/.gitignore
+!/.gitlab-ci.yml
+
+!/data/
+!/data/general.yml
+
+!/static/
+!/static/**
+
+!/templates/
+!/templates/**

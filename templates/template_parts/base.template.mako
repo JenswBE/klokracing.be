@@ -1,5 +1,6 @@
 <%!
     preload = False
+    title = "REPLACE_ME"
 %>
 
 <!DOCTYPE html>
@@ -8,7 +9,7 @@
 <!--[if gt IE 9]><!-->	<html lang="nl"> <!--<![endif]-->
 <head>
     <meta charset="utf-8" />
-    <title><%block name="title"/> - KLOK-RACING</title>
+    <title>${self.attr.title} - KLOK-RACING</title>
     <meta name="keywords" content="Scooters,Brommers,Beerse" />
     <meta name="description" content="Uw brommer- en scooterdealer met een persoonlijke aanpak en meer dan 30 jaar ervaring." />
     <meta name="Author" content="Jens Willemsens [jensw.be]" />
@@ -35,9 +36,10 @@
     <link href="/assets/plugins/slider.revolution.v5/css/pack.css" rel="stylesheet">
 
     <!-- MINIFIED WEBSITE CSS -->
-    <!-- TODO: Add minified website CSS -->
+    <link href="/assets/css/klokracing.min.css" rel="stylesheet">
 
     <!-- CUSTOM PAGE CSS -->
+    <link href="/assets/css/layout-shop.css" rel="stylesheet">
     <%block name="css"/>
 
     <!-- Leaflet Maps API -->
@@ -68,7 +70,7 @@
 
                     <!-- Logo -->
                     <a class="logo pull-left">
-                      <img src="/assets/img/logo.jpg" alt="Logo van KLOK-RACING"
+                      <img src="/assets/img/logo.jpg" alt="Logo van KLOK-RACING"/>
                     </a>
 
                     <!--
@@ -128,7 +130,7 @@
 <a href="#" id="toTop"></a>
 
 
-% if preload:
+% if self.attr.preload:
     <!-- PRELOADER -->
     <div id="preloader">
         <div class="inner">
@@ -139,8 +141,8 @@
 
 
 <!-- JAVASCRIPT FILES -->
-<script type="text/javascript">var plugin_path = '/assets/plugins';</script>
-<script src="/assets/js/plugins/jquery/jquery-2.2.3.min.js"></script>
+<script type="text/javascript">var plugin_path = '/assets/plugins/';</script>
+<script src="/assets/plugins/jquery/jquery-2.2.3.min.js"></script>
 <script src="/assets/js/scripts.js"></script>
 
 <!-- PAGE SPECIFIC JAVASCRIPT -->

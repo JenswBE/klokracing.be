@@ -1,3 +1,21 @@
 openingsuren:
   contact: ''
   footer: 'MA, DI, DO: 18h - 20h30 • VR: 8h30 - 17h30 • Op Afspraak'
+
+pages:
+  index:
+    slides:
+      - img: takelen.jpg
+        alt: Een scooter die getakeld wordt
+        title: Heeft u panne?
+        subtitle: Geen probleem! KLOK-RACING haalt uw scooter op.
+
+      - img: maken.jpg
+        alt: Een scooter die wordt hersteld
+        title: Kunt u uw scooter niet missen?
+        subtitle: Wordt - indien mogelijk - hersteld terwijl u wacht.
+
+      - img: verkoop.jpg
+        alt: Een rij met scooters en brommers
+        title: Enkel het nieuwste of een beperkt budget?
+        subtitle: Breed aanbod van nieuwe en tweedehands scooters.

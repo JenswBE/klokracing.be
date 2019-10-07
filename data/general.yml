@@ -19,3 +19,56 @@ pages:
         alt: Een rij met scooters en brommers
         title: Enkel het nieuwste of een beperkt budget?
         subtitle: Breed aanbod van nieuwe en tweedehands scooters.
+
+  scooters:
+    dealers:
+      official:
+        - id: ksr_moto
+          name: KSR Moto
+          website: https://www.ksr-moto.com/nl/
+
+        - id: explorer
+          name: Explorer
+
+        - id: lambretta
+          name: Lambretta e-bikes
+          website: http://www.lambrettabikes.com/nl/
+
+        - id: lml
+          name: LML
+
+        - id: skyteam
+          name: SkyTeam
+          website: http://www.skyteammotor.com/
+
+      independant:
+        - id: yamaha
+          name: Yamaha
+          website: https://www.yamahamotorsports.com/scooter
+
+        - id: kymco
+          name: Kymco
+          website: https://www.kymco.com/
+
+        - id: mbk
+          name: MBK
+
+        - id: peugeot
+          name: Peugeot
+          website: https://www.peugeotscooters.be/nl/modellen
+
+        - id: piaggio
+          name: Piaggio
+          website: https://www.piaggio.com/be_NL/
+
+        - id: sym
+          name: SYM
+          website: https://www.sym.be/nl/home
+
+        - id: vespa
+          name: Vespa
+          website: https://www.vespa.com/be_NL
+
+        - id: mash
+          name: MASH
+          website: http://www.mash-motors.be/nl/

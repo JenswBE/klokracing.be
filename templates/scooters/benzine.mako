@@ -14,7 +14,7 @@
         <h1>SCOOTERS</h1>
         <ol class="breadcrumb">
             <li><a href="/">Start</a></li>
-            <li class="active">Scooters</li>
+            <li class="active">${title}</li>
         </ol>
     </div>
 </section>

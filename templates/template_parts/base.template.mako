@@ -69,7 +69,7 @@
                     </button>
 
                     <!-- Logo -->
-                    <a class="logo pull-left">
+                    <a href="/" class="logo pull-left">
                       <img src="/assets/img/logo.jpg" alt="Logo van KLOK-RACING"/>
                     </a>
 

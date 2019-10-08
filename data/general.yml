@@ -1,6 +1,28 @@
 openingsuren:
-  contact: ''
   footer: 'MA, DI, DO: 18h - 20h30 • VR: 8h30 - 17h30 • Op Afspraak'
+  contact:
+    - name: MAANDAG
+      open: OP AFSPRAAK en van 18h-20h30
+
+    - name: DINSDAG
+      open: OP AFSPRAAK en van 18h-20h30
+
+    - name: WOENSDAG
+      open: OP AFSPRAAK
+
+    - name: DONDERDAG
+      open: OP AFSPRAAK en van 18h-20h30
+
+    - name: VRIJDAG
+      open: 8h30-17h30
+
+    - name: ZATERDAG
+      open: GESLOTEN
+
+    - name: ZONDAG
+      open: GESLOTEN
+  phone: +32 477 79 05 26
+  email: info@klokracing.be
 
 pages:
   index:

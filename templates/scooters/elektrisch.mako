@@ -1,4 +1,4 @@
-<%inherit file="template_parts/base.template.mako"/>
+<%inherit file="/template_parts/base.template.mako"/>
 
 <%!
     preload = False

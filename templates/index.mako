@@ -1,12 +1,11 @@
 <%inherit file="template_parts/base.template.mako"/>
-<%namespace name="rs_slide" file="template_parts/rs_slide.template.mako"/>
+<%namespace name="rs_slide" file="template_parts/rs_slide.part.mako"/>
 
 <%!
     preload = True
     title = "Start"
 %>
 
-<%block name="content">
 <!-- START REVOLUTION SLIDER 5.3.0 fullwidth mode -->
 <div id="rev_slider_647_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="car-dealership" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
     <div id="rev_slider_647_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.3.0">
@@ -63,8 +62,6 @@
         <!-- /FEATURED BOXES 3 -->
     </div>
 </section>
-<!-- /FEATURES -->
-</%block>
 
 <%block name="script">
   <script src="/assets/plugins/slider.revolution.v5/js/jquery.themepunch.tools.min.js"></script>

@@ -93,7 +93,7 @@
                     </li>
                 -->
                 <ul id="topMain" class="nav nav-pills nav-main">
-                    <%include file="navigation.template.mako" />
+                    <%include file="navigation.part.mako" />
                 </ul>
 
             </nav>
@@ -105,7 +105,7 @@
 
 </div>
 
-<%block name="content"/>
+${self.body()}
 
 <!-- FOOTER -->
 <footer id="footer">

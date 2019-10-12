@@ -4,7 +4,7 @@ pages:
   stage: deploy
   script:
   - pip install melthon
-  - melthon build -o public
+  - melthon build --no-pretty-urls -o public
   artifacts:
     paths:
     - public/

@@ -1,11 +1,13 @@
-image: alpine:latest
+image: python:3.7-alpine
 
 pages:
   stage: deploy
   script:
-  - echo 'Nothing to do...'
+  - apk update && apk add make
+  - pip install melthon
+  - melthon build -o public
   artifacts:
     paths:
-    - public
+    - public/
   only:
   - master

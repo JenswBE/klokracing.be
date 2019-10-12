@@ -40,7 +40,9 @@
 
     <!-- CUSTOM PAGE CSS -->
     <link href="/assets/css/layout-shop.css" rel="stylesheet">
-    <%block name="css"/>
+    <style type="text/css">
+        <%block name="css"/>
+    </style>
 
     <!-- Leaflet Maps API -->
     <link rel="stylesheet"

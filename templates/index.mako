@@ -24,7 +24,7 @@
 
         <header class="text-center margin-bottom-60">
             <h2>Welkom bij KLOK-RACING</h2>
-            <p class="lead font-lato">Uw brommer- en scooterdealer</p>
+            <p class="lead font-lato">Jouw brommer- en scooterdealer</p>
             <hr />
         </header>
 

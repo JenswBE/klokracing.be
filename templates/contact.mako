@@ -7,7 +7,7 @@
 
 <section class="page-header page-header-xs dark">
     <div class="container">
-        <h1>CONTACT</h1>
+        <h1>${title.upper()}</h1>
         <ol class="breadcrumb">
             <li><a href="/">Start</a></li>
             <li class="active">${title}</li>

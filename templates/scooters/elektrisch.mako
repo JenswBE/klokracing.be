@@ -7,7 +7,7 @@
 
 <section class="page-header page-header-xs dark">
     <div class="container">
-        <h1>ELEKTRISCHE SCOOTERS</h1>
+        <h1>${title.upper()}</h1>
         <ol class="breadcrumb">
             <li><a href="/">Start</a></li>
             <li class="active">${title}</li>
@@ -22,11 +22,11 @@
                 <h3>Offici&euml;le dealer Lifan elektrische scooters</h3>
                 <p style="font-size: 1.2em">
                     Bikkel Bikes is een Nederlands merk dat zich focust op kwaliteitsvolle en betaalbare fietsen.
-                    Als offici&euml;le dealer zit u dus ook goed bij KLOK&#8209;RACING voor een elektrische fiets.
-                    Bij ons kan u steeds terecht voor advies over de verschillende modellen en soorten elektrische motors.
+                    Als offici&euml;le dealer zit je dus ook goed bij KLOK&#8209;RACING voor een elektrische fiets.
+                    Bij ons kan je steeds terecht voor advies over de verschillende modellen en soorten elektrische motors.
                 </p>
                 <p style="font-size: 1.2em">
-                    Hieronder vindt u een paar afbeeldingen uit het aanbod van Lifan Scooters.
+                    Hieronder vind je een paar afbeeldingen uit het aanbod van Lifan Scooters.
                     Het volledige aanbod kan je steeds vinden op de
                     <a href="https://lifanmotors.be" target="_blank">website van Lifan</a>
                     of

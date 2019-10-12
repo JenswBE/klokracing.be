@@ -11,7 +11,7 @@
 
 <section class="page-header page-header-xs dark">
     <div class="container">
-        <h1>SCOOTERS</h1>
+        <h1>${title.upper()}</h1>
         <ol class="breadcrumb">
             <li><a href="/">Start</a></li>
             <li class="active">${title}</li>
@@ -31,9 +31,9 @@
             </div>
 
             <div class="col-md-6">
-                <h3>Uw brommer- en scooterdealer</h3>
+                <h3>Jouw brommer- en scooterdealer</h3>
                 <p style="font-size: 1.2em">
-                    Bij KLOK-RACING kan u terecht voor zowel nieuwe als tweedehands scooters en brommers.
+                    Bij KLOK-RACING kan je terecht voor zowel nieuwe als tweedehands scooters en brommers.
                     Bij een bezoek aan onze zaak, kan je steeds rekenen op een persoonlijk advies.
                     Hierdoor kan je d&eacute; scooter vinden die aansluit bij zowel je wensen als je budget.
                 </p>

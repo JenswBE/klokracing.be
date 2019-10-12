@@ -40,7 +40,7 @@
                     Het volledige aanbod kan je steeds vinden op de
                     <a href="http://bikkelbikes.eu/collectie" target="_blank">website van Bikkel</a>
                     of
-                    <a href="/contact.html">spring gerust eens binnen</a>
+                    <a href="/contact">spring gerust eens binnen</a>
                     voor persoonlijk advies.
                 </p>
             </div>

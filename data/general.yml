@@ -1,20 +1,20 @@
 openingsuren:
-  footer: 'MA, DI, DO: 18h - 20h30 • VR: 8h30 - 17h30 • Op Afspraak'
+  footer: 'MA, DI, DO: 18h - 20h30 • WOE: 18h - 20h30 • VR: 9h - 18h'
   contact:
     - name: MAANDAG
-      open: OP AFSPRAAK en van 18h-20h30
+      open: 9h - 20h30
 
     - name: DINSDAG
-      open: OP AFSPRAAK en van 18h-20h30
+      open: 9h - 20h30
 
     - name: WOENSDAG
-      open: OP AFSPRAAK
+      open: 18h-20h30
 
     - name: DONDERDAG
-      open: OP AFSPRAAK en van 18h-20h30
+      open: 9h - 20h30
 
     - name: VRIJDAG
-      open: 8h30-17h30
+      open: 9h - 18h
 
     - name: ZATERDAG
       open: GESLOTEN

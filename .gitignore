@@ -4,7 +4,10 @@
 # Whitelist allowed
 !/README.md
 !/.gitignore
-!/.gitlab-ci.yml
+
+!/.github/
+!/.github/workflows/
+!/.github/workflows/build-and-publish.yml
 
 !/data/
 !/data/general.yml

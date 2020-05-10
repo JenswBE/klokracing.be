@@ -1,0 +1,26 @@
+address .footer-sprite {
+    margin-bottom:20px;
+    padding-left:30px;
+    background:url('../img/footer_sprite.png') no-repeat 0 0;
+}
+    address .footer-sprite:last-child {
+        margin-bottom:0;
+    }
+address p {
+    line-height:18px;
+}
+address p.contact-desc {
+    margin:0 0 30px 0;
+    padding:0 0 10px 0;
+    border-bottom:#403E44 1px dashed;
+}
+address .footer-sprite.address {
+    background-position:0 0;
+}
+address .footer-sprite.phone {
+    background-position:0 -138px;
+    line-height:30px;
+}
+address .footer-sprite.email {
+    background-position:0 -247px;
+}

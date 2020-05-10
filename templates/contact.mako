@@ -68,11 +68,13 @@
             mymap.scrollWheelZoom.disable()
 
             // Add map tile layer
-            L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
-              attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery &copy; <a href="https://www.mapbox.com/">Mapbox</a>',
-              maxZoom: 18,
-              id: 'mapbox.streets',
-              accessToken: 'pk.eyJ1IjoiamVuc3dpbGxlbXNlbnMiLCJhIjoiY2prcDR1eWp3MTB1dTNwdGRhajhodmJ5ayJ9.y3S0DbYU68APDP5HDTey2w'
+            L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
+                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+                maxZoom: 18,
+                tileSize: 512,
+                zoomOffset: -1,
+                id: 'mapbox/streets-v11',
+                accessToken: 'pk.eyJ1IjoiamVuc3dpbGxlbXNlbnMiLCJhIjoiY2prcDR1eWp3MTB1dTNwdGRhajhodmJ5ayJ9.y3S0DbYU68APDP5HDTey2w'
             }).addTo(mymap);
 
             // Add marker for Klokracing

@@ -53,8 +53,8 @@ pages:
           name: Explorer
 
         - id: lambretta
-          name: Lambretta e-bikes
-          website: http://www.lambrettabikes.com/nl/
+          name: Lambretta
+          website: https://www.lambrettascooters.com/nl/
 
         - id: lml
           name: LML

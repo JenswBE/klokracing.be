@@ -70,7 +70,7 @@ pages:
 
         - id: kymco
           name: Kymco
-          website: https://www.kymco.com/
+          # website: https://www.kymco.com/
 
         - id: mbk
           name: MBK

@@ -1,5 +1,5 @@
 openingsuren:
-  footer: 'MA, DI, DO: 18h - 20h30 • WOE: 18h - 20h30 • VR: 9h - 18h'
+  footer: "MA, DI, DO: 18h - 20h30 • WOE: 18h - 20h30 • VR: 9h - 18h"
   contact:
     - name: MAANDAG
       open: 9h - 20h30
@@ -47,14 +47,14 @@ pages:
       official:
         - id: ksr_moto
           name: KSR Moto
-          website: https://www.ksr-moto.com/nl/
+          # website: https://www.ksr-moto.com/nl/
 
         - id: explorer
           name: Explorer
 
         - id: lambretta
           name: Lambretta
-          website: https://www.lambrettascooters.com/nl/
+          website: https://lambrettascooters.com
 
         - id: lml
           name: LML
@@ -70,14 +70,14 @@ pages:
 
         - id: kymco
           name: Kymco
-          # website: https://www.kymco.com/
+          website: https://scooters.kymco.nl/
 
         - id: mbk
           name: MBK
 
         - id: peugeot
           name: Peugeot
-          website: https://www.peugeotscooters.be/nl/modellen
+          website: https://www.peugeot-motocycles.be/nl.html
 
         - id: piaggio
           name: Piaggio
@@ -85,7 +85,7 @@ pages:
 
         - id: sym
           name: SYM
-          website: https://www.sym.be/nl/home
+          website: https://www.sym.be/nl.html
 
         - id: vespa
           name: Vespa
@@ -93,4 +93,4 @@ pages:
 
         - id: mash
           name: MASH
-          website: http://www.mash-motors.be/nl/
+          website: https://mash-motors.be/

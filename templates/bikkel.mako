@@ -38,7 +38,7 @@
                 <p style="font-size: 1.2em">
                     Hieronder vindt je een kleine greep uit het aanbod van Bikkel Bikes.
                     Het volledige aanbod kan je steeds vinden op de
-                    <a href="http://bikkelbikes.eu/collectie" target="_blank">website van Bikkel</a>
+                    <a href="https://www.bikkelbikes.com/fiets/" target="_blank">website van Bikkel</a>
                     of
                     <a href="/contact">spring gerust eens binnen</a>
                     voor persoonlijk advies.

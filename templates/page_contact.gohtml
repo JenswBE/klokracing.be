@@ -1,36 +1,35 @@
-<%inherit file="template_parts/base.template.mako"/>
+<!-- Base layout -->
+{{ template "layout_base.gohtml" . }}
 
-<%!
-    preload = False
-    title = "Contact"
-%>
-
+<!-- Body content -->
+{{ define "content" }}
 <section class="page-header page-header-xs dark">
-    <div class="container">
-        <h1>${title.upper()}</h1>
-        <ol class="breadcrumb">
-            <li><a href="/">Start</a></li>
-            <li class="active">${title}</li>
-        </ol>
-    </div>
+  <div class="container">
+    <h1>{{ toUpper .Data.Title }}</h1>
+    <ol class="breadcrumb">
+      <li><a href="/">Start</a></li>
+      <li class="active">{{ .Data.Title }}</li>
+    </ol>
+  </div>
 </section>
 
 <section>
-
     <div id="map" hight="400" class="contact-over-map"></div>
 
     <div class="container">
         <div class="contact-over-box pull-right">
+            
             <h3 class="size-20">Openingsuren</h3>
             <div class="row">
                 <div class="col-md-12 margin-bottom-20">
-                    % for hour in data['general']['openingsuren']['contact']:
-                        <p class="bold margin-bottom-0">${hour['name']}</p>
-                        <p class="margin-left-10">${hour['open']}</p>
-                    % endfor
+                    {{ range .Data.Openingsuren.Contact }}
+                        <p class="bold margin-bottom-0">{{ .Name }}</p>
+                        <p class="margin-left-10">{{ .Open }}</p>
+                    {{ end }}
                 </div>
             </div>
 
+            {{ with .Data.Contact }}
             <h3 class="size-20">Contactgegevens</h3>
             <div class="row">
                 <div class="col-md-12 margin-bottom-20">
@@ -41,23 +40,28 @@
                                 Wielewaalstraat 2<br>
                                 2340 Beerse<br>
                             </li>
+                            {{ with .Phone }}
                             <li class="footer-sprite phone">
-                                <% phone = data['general']['openingsuren']['phone'] %>
-                                <a href="tel:${phone}">${phone}</a>
+                                <a href="tel:{{ . }}">{{ . }}</a>
                             </li>
+                            {{ end }}
+                            {{ with .Email }}
                             <li class="footer-sprite email">
-                                <% email = data['general']['openingsuren']['email'] %>
-                                <a href="mailto:${email}">${email}</a>
+                                <a href="mailto:{{ . }}">{{ . }}</a>
                             </li>
+                            {{ end }}
                         </ul>
                     </address>
                 </div>
             </div>
+            {{ end }}
         </div>
     </div>
 </section>
+{{ end }}
 
-<%block name="script">
+<!-- Extra body content -->
+{{ define "body_end" }}
     <script>
         jQuery(document).ready(function(){
             // Basic setup
@@ -81,4 +85,4 @@
             var marker = L.marker(coord_klokracing).addTo(mymap);
         });
     </script>
-</%block>
+{{ end }}

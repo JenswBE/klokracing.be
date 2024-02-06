@@ -1,18 +1,15 @@
-<%inherit file="template_parts/base.template.mako"/>
-<%namespace name="rs_slide" file="template_parts/rs_slide.part.mako"/>
+<!-- Base layout -->
+{{ template "layout_base.gohtml" . }}
 
-<%!
-    preload = True
-    title = "Start"
-%>
-
+<!-- Body content -->
+{{ define "content" }}
 <!-- START REVOLUTION SLIDER 5.3.0 fullwidth mode -->
 <div id="rev_slider_647_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-alias="car-dealership" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
     <div id="rev_slider_647_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.3.0">
         <ul>
-            % for slide in data['general']['pages']['index']['slides']:
-              ${rs_slide.slide(loop.index, slide['img'], slide['alt'], slide['title'], slide['subtitle'])}
-            % endfor
+            {{ range .Data.IndexSlides }}
+                {{ template "slide" . }}
+            {{ end }}
         </ul>
 <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>	</div>
 </div>
@@ -62,8 +59,100 @@
         <!-- /FEATURED BOXES 3 -->
     </div>
 </section>
+<div id="preloader">
+    <div class="inner">
+        <span class="loader"></span>
+    </div>
+</div>
+{{ end }}
 
-<%block name="script">
+{{ define "slide" }}
+<li
+data-index="rs-195{{ .Index }}"
+data-transition="slideremovehorizontal"
+data-slotamount="default"
+data-hideafterloop="0"
+data-hideslideonmobile="off"
+data-easein="Power1.easeInOut"
+data-easeout="Power1.easeInOut"
+data-masterspeed="800"
+data-thumb="/assets/img/{{ .Image }}"
+data-rotate="0"
+data-fstransition="slideremovehorizontal"
+data-fsmasterspeed="800"
+data-fsslotamount="7"
+data-saveperformance="off">
+
+<!-- MAIN IMAGE -->
+<img src="/assets/img/1x1.png"  alt=""
+data-lazyload="/assets/img/{{ .Image }}"
+data-bgposition="center center"
+data-bgfit="cover"
+data-bgrepeat="no-repeat"
+data-bgparallax="5" class="rev-slidebg"
+data-no-retina
+alt="{{ .Alt }}">
+<!-- LAYERS -->
+
+<!-- LAYER NR. 1 -->
+<div class="tp-caption   tp-resizeme"
+id="slide-195{{ .Index }}-layer-1"
+
+data-x="['left','left','left','left']"
+data-hoffset="['30','30','30','20']"
+
+data-y="['top','top','top','top']"
+data-voffset="['30','30','30','20']"
+data-fontsize="['50','40','30','20']"
+data-lineheight="['70','60','50','40']"
+data-width="none"
+data-height="none"
+data-whitespace="nowrap"
+data-transform_idle="o:1;"
+
+data-transform_in="x:right(R);s:800;e:Power1.easeInOut;"
+data-transform_out="x:left(R);s:800;e:Power1.easeInOut;"
+
+data-start="0"
+data-splitin="none"
+data-splitout="none"
+data-basealign="slide"
+data-responsive_offset="on"
+
+style="z-index: 5; white-space: nowrap; font-size: 50px; line-height: 70px; font-weight: 700; color: rgba(255, 255, 255, 1.00);font-family:Roboto;background-color:rgba(0, 0, 0, 1.00);padding:0 30px 0 30px;">{{ .Title }}</div>
+
+<!-- LAYER NR. 2 -->
+<div class="tp-caption   tp-resizeme"
+id="slide-195{{ .Index }}-layer-2"
+
+data-x="['left','left','left','left']"
+data-hoffset="['30','30','30','20']"
+
+data-y="['top','top','top','top']"
+data-voffset="['110','100','90','65']"
+data-fontsize="['30','30','20','15']"
+data-lineheight="['50','50','40','30']"
+data-width="none"
+data-height="none"
+data-whitespace="nowrap"
+data-transform_idle="o:1;"
+
+data-transform_in="x:right(R);s:800;e:Power1.easeInOut;"
+data-transform_out="x:left(R);s:800;e:Power1.easeInOut;"
+
+data-start="0"
+data-splitin="none"
+data-splitout="none"
+data-basealign="slide"
+data-responsive_offset="on"
+
+style="z-index: 6; white-space: nowrap; font-size: 30px; line-height: 50px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Roboto;background-color:rgba(0, 0, 0, 1.00);padding:0 30px 0 30px;">{{ .Subtitle }}</div>
+
+</li>
+{{ end }}
+
+<!-- Extra body content -->
+{{ define "body_end" }}
   <script src="/assets/plugins/slider.revolution.v5/js/jquery.themepunch.tools.min.js"></script>
   <script src="/assets/plugins/slider.revolution.v5/js/jquery.themepunch.revolution.min.js"></script>
   <script>
@@ -162,4 +251,4 @@
         }
     });
   </script>
-</%block>
+{{ end }}

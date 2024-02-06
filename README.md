@@ -1,4 +1,12 @@
-![Build and publish](https://github.com/JenswBE/melthon-klokracing/workflows/Build%20and%20publish/badge.svg)
-
 # Klokracing.be
-Website for a [local moped and scooter shop](https://klokracing.be/) generated with Melthon
+
+Website for a [local moped and scooter shop](https://klokracing.be/).
+
+## Run locally
+
+```bash
+reflex -vR 'output/.*' -- go run . --debug
+
+cd output
+python3 -m http.server
+```

@@ -1,29 +1,28 @@
-<%inherit file="template_parts/base.template.mako"/>
+<!-- Base layout -->
+{{ template "layout_base.gohtml" . }}
 
-<%!
-    preload = False
-    title = "Onderdelen"
-%>
-
-<%block name="css">
+<!-- Extra head -->
+{{ define "head" }}
+<style>
     #footer {
       position: fixed;
       bottom: 0;
       width: 100%;
       height: 70px; /* Set the fixed height of the footer here */
     }
-</%block>
+</style>
+{{ end }}
 
+<!-- Body content -->
+{{ define "content" }}
 <section class="page-header page-header-xs dark">
-    <div class="container">
-        <h1>${title.upper()}</h1>
-
-        <!-- breadcrumbs -->
-        <ol class="breadcrumb">
-            <li><a href="/">Start</a></li>
-            <li class="active">${title}</li>
-        </ol><!-- /breadcrumbs -->
-    </div>
+  <div class="container">
+    <h1>{{ toUpper .Data.Title }}</h1>
+    <ol class="breadcrumb">
+      <li><a href="/">Start</a></li>
+      <li class="active">{{ .Data.Title }}</li>
+    </ol>
+  </div>
 </section>
 
 <section>
@@ -59,3 +58,4 @@
         </article>
     </div>
 </section>
+{{ end }}

@@ -1,22 +1,17 @@
-<%inherit file="template_parts/base.template.mako"/>
+<!-- Base layout -->
+{{ template "layout_base.gohtml" . }}
 
-<%!
-    preload = False
-    title = "Elektrische fietsen"
-%>
-
+<!-- Body content -->
+{{ define "content" }}
 <section class="page-header page-header-xs dark">
-    <div class="container">
-        <h1>${title.upper()}</h1>
-
-        <!-- breadcrumbs -->
-        <ol class="breadcrumb">
-            <li><a href="/">Start</a></li>
-            <li class="active">${title}</li>
-        </ol><!-- /breadcrumbs -->
-    </div>
+  <div class="container">
+    <h1>{{ toUpper .Data.Title }}</h1>
+    <ol class="breadcrumb">
+      <li><a href="/">Start</a></li>
+      <li class="active">{{ .Data.Title }}</li>
+    </ol>
+  </div>
 </section>
-
 
 <section>
     <div class="container">
@@ -49,16 +44,17 @@
 
     <div class="container margin-top-50">
         <div id="portfolio" class="clearfix portfolio-isotope portfolio-isotope-3">
-            % for bike in range(1,10):
+            {{ range (rangeRepeat 1 9) }}
                 <div class="portfolio-item">
                     <div class="item-box">
                         <figure>
-                            <img src="/assets/img/bikkel/fiets${bike}.jpg"
+                            <img src="/assets/img/bikkel/fiets{{ . }}.jpg"
                                class= "img-responsive" width="600" height="399"/>
                         </figure>
                     </div>
                 </div>
-            % endfor
+            {{ end }}
         </div>
     </div>
 </section>
+{{ end }}

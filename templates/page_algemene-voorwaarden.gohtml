@@ -6,6 +6,44 @@
 {{ define "title" }}Algemene voorwaarden - Interwego{{ end }}
 
 
+<!-- Extra header content -->
+{{ define "head" }}
+<style type="text/css">
+  @media print {
+    /* Ensure whole document fits a single A4 */
+    #header,
+    #footer,
+    #toTop {
+      display: none !important;
+    }
+
+    section {
+      padding: 0 !important;
+      border: none;
+    }
+
+    body,
+    p,
+    ol,
+    h1,
+    h2 {
+      font-size: 6.5pt;
+      margin: 0;
+    }
+
+    a {
+      text-decoration: underline;
+    }
+
+    /* Don't print anchor values in brackets */
+    a[href]:after {
+      content: none !important;
+    }
+  }
+</style>
+{{ end }}
+
+
 <!-- Body content -->
 {{ define "content" }}
 <section>
@@ -86,12 +124,10 @@
         </ol>
 
         <h2>Artikel 4 - Bestelling</h2>
-        <ol>
-          <li>
-            De Klant wordt als de enige verantwoordelijke voor de bestelling en de betaling beschouwd.
-            Indien de bestelling is uitgevoerd door een derde, wordt dit geacht in naam en voor rekening van de Klant te zijn gebeurd.
-          </li>
-        </ol>
+        <p>
+          De Klant wordt als de enige verantwoordelijke voor de bestelling en de betaling beschouwd.
+          Indien de bestelling is uitgevoerd door een derde, wordt dit geacht in naam en voor rekening van de Klant te zijn gebeurd.
+        </p>
 
         <h2>Artikel 5 - Levering</h2>
         <ol>

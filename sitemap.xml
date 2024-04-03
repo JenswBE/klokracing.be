@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-    xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-    http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://klokracing.be/</loc>
-        <changefreq>weekly</changefreq>
+        <loc>https://klokracing.be</loc>
     </url>
     <url>
-        <loc>https://klokracing.be/bikkel</loc>
-        <changefreq>monthly</changefreq>
+        <loc>https://klokracing.be/bikkel/</loc>
     </url>
     <url>
-        <loc>https://klokracing.be/scooters/nieuw</loc>
-        <changefreq>monthly</changefreq>
+        <loc>https://klokracing.be/scooters/benzine/</loc>
     </url>
     <url>
-        <loc>https://klokracing.be/scooters/tweedehands</loc>
-        <changefreq>weekly</changefreq>
+        <loc>https://klokracing.be/scooters/elektrisch/</loc>
     </url>
     <url>
-        <loc>https://klokracing.be/onderdelen</loc>
-        <changefreq>weekly</changefreq>
+        <loc>https://klokracing.be/onderdelen/</loc>
     </url>
     <url>
-        <loc>https://klokracing.be/contact</loc>
-        <changefreq>monthly</changefreq>
+        <loc>https://klokracing.be/contact/</loc>
+    </url>
+    <url>
+        <loc>https://klokracing.be/algemene-voorwaarden/</loc>
     </url>
 </urlset>

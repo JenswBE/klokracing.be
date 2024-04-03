@@ -1,5 +1,1 @@
-User-agent: *
-Disallow: /beheer/
-Disallow: /plugins/
-
 Sitemap: https://klokracing.be/sitemap.xml

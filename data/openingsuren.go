@@ -12,7 +12,7 @@ type OpeningsurenContact struct {
 
 func GetOpeningsuren() Openingsuren {
 	return Openingsuren{
-		Footer: "MA, DI, DO: 18h - 20h30 • VR: 9h - 17h30",
+		Footer: "MA, DI, DO: 18h - 20h30 • VR: 9h - 17h30 • WOE, ZA, ZO: Gesloten",
 		Contact: []OpeningsurenContact{
 			{
 				Name: "MAANDAG",

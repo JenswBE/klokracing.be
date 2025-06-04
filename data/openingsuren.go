@@ -24,7 +24,7 @@ func GetOpeningsuren() Openingsuren {
 			},
 			{
 				Name: "WOENSDAG",
-				Open: "18h - 20h30",
+				Open: "GESLOTEN",
 			},
 			{
 				Name: "DONDERDAG",
@@ -32,7 +32,7 @@ func GetOpeningsuren() Openingsuren {
 			},
 			{
 				Name: "VRIJDAG",
-				Open: "9h - 18h",
+				Open: "9h - 17h30",
 			},
 			{
 				Name: "ZATERDAG",

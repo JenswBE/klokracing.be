@@ -17,7 +17,6 @@ func GetDealers() Dealers {
 			{
 				ID:   "ksr_moto",
 				Name: "KSR Moto",
-				// Website: "https://www.ksr-moto.com/nl/",
 			},
 			{
 				ID:   "explorer",

@@ -23,9 +23,9 @@ func GetDealers() Dealers {
 				Name: "Explorer",
 			},
 			{
-				ID:      "lambretta",
-				Name:    "Lambretta",
-				Website: "https://lambrettascooters.com",
+				ID:   "lambretta",
+				Name: "Lambretta",
+				// Website: "https://lambrettascooters.com", # Often gives "HTTP 522: Connection timed out" (Cloudflare)
 			},
 			{
 				ID:   "lml",

@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/dangrossman/bootstrap-daterangepicker",
   "engines": {
-    "node": "0.10.32",
+    "node": "0.12.18",
     "nmp": "1.4.28"
   },
   "dependencies": {

@@ -1,17 +1,24 @@
 name: Build and publish
 on:
+  pull_request:
   push:
     branches: [main]
   workflow_dispatch:
+
+concurrency:
+  group: generate_website
+  cancel-in-progress: true
 
 env:
   GO_VERSION: "1.24"
 
 jobs:
-  build-and-publish:
+  build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read # Minimal permissions to read source code
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: actions/setup-go@v5
         with:
@@ -31,8 +38,24 @@ jobs:
       - name: Generate website
         run: go run .
 
-      - name: Publish to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Upload static files as artifact
+        if: github.event_name != 'pull_request'
+        id: deployment
+        uses: actions/upload-pages-artifact@v5
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./output
+          path: output/
+
+  deploy:
+    runs-on: ubuntu-latest
+    if: github.event_name != 'pull_request'
+    needs: build
+    permissions:
+      id-token: write # to verify the deployment originates from an appropriate source
+      pages: write    # to deploy to Pages
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

@@ -1,15 +1,15 @@
 module github.com/JenswBE/klokracing.be
 
-go 1.24
+go 1.27
 
 require (
-	github.com/JenswBE/go-pipeline v1.0.0
-	github.com/rs/zerolog v1.34.0
+	github.com/JenswBE/go-pipeline v1.1.0
+	github.com/rs/zerolog v1.35.1
 )
 
 require (
-	github.com/mattn/go-colorable v0.1.14 // indirect
-	github.com/mattn/go-isatty v0.0.20 // indirect
-	golang.org/x/sys v0.33.0 // indirect
+	github.com/mattn/go-colorable v0.1.16 // indirect
+	github.com/mattn/go-isatty v0.0.24 // indirect
+	golang.org/x/sys v0.49.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
